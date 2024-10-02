@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { products } from "../assets/assets"; 
+import { products } from "../assets/assets";
 import Title from "../components/Title";
 import ProductItem from "./ProductItem";
 
@@ -11,14 +11,13 @@ const BestSeller = () => {
     setBestSeller(bestProduct.slice(0, 5));
   }, []);
 
-
   return (
     <div className="my-10">
-      <div className="text-center text-3xl  py-8">
-        <Title text1={"BEST"} text2={"SELLERS"} />
+      <div className="text-center text-3xl py-8">
+        <Title text1={"สินค้าขายดี"} text2={""} />
         <p className="w-3/4 m-auto text-xs sm:text-sm md:text-base text-gray-700">
-          Choose your favorite from our best-selling products. These items have
-          sold more than 100 times in the past month.
+          เลือกสินค้าที่คุณชื่นชอบจากสินค้าขายดีของเรา
+          รายการเหล่านี้ถูกขายไปแล้วมากกว่า 100 ครั้งในเดือนที่ผ่านมา
         </p>
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 gap-y-6">
